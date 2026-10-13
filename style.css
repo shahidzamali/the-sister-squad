@@ -83,3 +83,42 @@
         font-size: 8px;
     }
 }
+
+/* Mobile layout fix */
+@media screen and (max-width: 650px) {
+
+    .closing {
+        position: relative;
+        overflow: hidden;
+    }
+
+    .closing::before,
+    .closing::after {
+        font-size: 90px;
+        opacity: 0.04;
+        pointer-events: none;
+    }
+
+    .closing-flower {
+        font-size: 24px;
+    }
+
+    .closing h2 {
+        position: relative;
+        z-index: 1;
+        font-size: 38px;
+    }
+
+    .closing-copy,
+    .closing .eyebrow,
+    .closing .button,
+    .closing-names {
+        position: relative;
+        z-index: 1;
+    }
+
+    .youtube-cta {
+        position: relative;
+        z-index: 2;
+    }
+}
